@@ -4,12 +4,12 @@ import {Component} from '@angular/core';
     selector: 'navi-bar',
     template: `
                 <div class="top-bar">
-                    <div class="top-bar-title">GigaByte gaming comp[any<div>
+                    <div class="top-bar-title">GigaByte gaming company<div>
                     <div>
                         <ul class="menu">
                             <li class="nav-menu"><a href="#">Menu Item 1</a></li>
                         </ul>
-                    </div
+                    </div>
                 </div>
     `,
     styleUrls: ['./navbar.component.css']

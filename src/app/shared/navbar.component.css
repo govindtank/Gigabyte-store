@@ -1,5 +1,8 @@
 @import url('http://fonts.googleapis.com/icon?family=Coiny');
 
+.top-bar{
+    color: black;
+}
 .top-bar-title{
     font-family: 'Coiny',cursive;
     font-size: 22 px;
@@ -7,5 +10,5 @@
 }
 
 .nav-menu a {
-    color: #ffffff;
+    color: #ffffff;;
 }
