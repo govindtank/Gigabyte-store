@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './start/app.component';
 
 import {NavComponent } from './shared/navbar.component';
 import {HomeComponent} from './home/home.component';
