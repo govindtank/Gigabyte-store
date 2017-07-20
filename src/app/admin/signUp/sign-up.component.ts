@@ -15,7 +15,7 @@ export class SignUpComponent{
 
   constructor(private userSVC: UserService, private router: Router) { }
 
-  singUp() {
+  signUp() {
     if (this.password1 !== this.password2) {
       this.passwordFail = true;
     } else {

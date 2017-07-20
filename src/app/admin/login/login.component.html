@@ -1,1 +1,37 @@
-<h1>Login</h1>
+<div class="panel-title text-center">
+    <h1>Logon to your Account</h1>
+</div>
+<div class="panel panel-default text-center">
+    <form>
+    <div class="col-md-12 text-center ">
+      <label>Username
+        <input class="form-control" type="text" placeholder="Enter Email Address" id="email" 
+            [(ngModel)]="email" name="email" required #em="ngModel">
+        <div [hidden]="em.valid || em.pristine" class="alert callout">
+          Email is required
+        </div>
+      </label>
+    </div>
+    <div class="col-md-12 text-center ">
+      <label>Password
+        <input class="form-control" type="password" placeholder="Enter Password" id="password1" 
+            [(ngModel)]="password1" name="password1" required #pwd1="ngModel">
+        <div [hidden]="pwd1.valid || pwd1.pristine" class="alert callout">
+          Password required
+        </div>
+      </label>
+    </div>
+    <div class="col-md-12 text-center">
+      <div class="btn-group">
+        <a class="btn btn-success" (click)="login()">Login</a>
+        <a class="btn btn-danger" (click)="signup()">Sign Up</a>
+      </div>
+    </div>
+    <div class="col-md-12 text-center">
+      <p (click)="cancel()" class="text-center simlink">Back to the Main Site</p>
+    </div>
+
+
+
+    </form>
+</div>

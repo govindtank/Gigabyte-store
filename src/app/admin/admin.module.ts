@@ -11,14 +11,14 @@ import {AdminComponent} from './adminComponent/admin.component';
 
 import {UserService} from './adminShared/user.service';
 
-const AdminRoutes : Routes = [
+const AdminRoutes: Routes = [
     {
         path: 'admin',
         component: AdminComponent,
         children: [
-            {path: 'login',component:LoginComponent},
-            {path: 'signup',component:SignUpComponent},
-            {path:'',component:AdminComponent,canActivate:[UserService]}
+            {path: 'login', component: LoginComponent},
+            {path: 'signup', component: SignUpComponent},
+            {path: '', component: AdminComponent, canActivate: [UserService]}
         ]
     },
 ];
@@ -28,17 +28,17 @@ const AdminRoutes : Routes = [
         FormsModule,
         RouterModule.forChild(AdminRoutes)
     ],
-    exports:[
+    exports: [
         RouterModule
     ],
-    declarations:[
+    declarations: [
         AdminComponent,
         AdminMenuComponent,
         LoginComponent,
         SignUpComponent
     ],
-    providers:[
+    providers: [
         UserService
     ]
 })
-export class AdminModule{}
+export class AdminModule { }

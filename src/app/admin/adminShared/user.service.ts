@@ -30,8 +30,8 @@ export class UserService implements CanActivate {
         const url: string = state.url;
         return this.verifyLogin(url);
     }
-     verifyLogin(url: string): boolean{
-        if (this.userLoggedIn) {return true;}
+     verifyLogin(url: string): boolean {
+        if (this.userLoggedIn) {return true};
 
         this.router.navigate(['/admin/login']);
         return false;
@@ -58,8 +58,8 @@ export class UserService implements CanActivate {
                     alert(`${error.message} Unable to login. try again!`);
                 });
         }
-            logout() {
-                this.userLoggedIn = false;
+        logout() {
+            this.userLoggedIn = false;
                 firebase.auth().signOut().then(function(){
                     alert(`logged out`);
                 }, function (error) {
